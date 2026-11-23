@@ -1,12 +1,11 @@
-from datetime import datetime, timezone
-from pathlib import Path
 import sys
 import unittest
+from datetime import datetime, timezone
+from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from starcleaner.core import analyze_repository, build_scan
-
 
 NOW = datetime(2026, 11, 23, 12, 0, tzinfo=timezone.utc)
 

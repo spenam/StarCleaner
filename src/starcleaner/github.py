@@ -8,7 +8,6 @@ import urllib.parse
 import urllib.request
 from typing import Any
 
-
 API_URL = "https://api.github.com"
 API_VERSION = "2026-03-10"
 

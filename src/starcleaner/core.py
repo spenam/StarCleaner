@@ -7,7 +7,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-
 CACHE_FILE = Path.home() / ".starcleaner" / "last_scan.json"
 
 

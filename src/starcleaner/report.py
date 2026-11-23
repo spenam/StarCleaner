@@ -6,7 +6,6 @@ from collections import Counter
 from datetime import datetime
 from typing import Any
 
-
 STATUS_LABELS = {
     "active": "ACTIVE",
     "stale": "STALE",
