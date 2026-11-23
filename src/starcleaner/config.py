@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def load_env(env_file: Path | None = None) -> None:
-    env_file = env_file or Path(__file__).resolve().parents[2] / ".env"
+    env_file = env_file or Path.cwd() / ".env"
 
     if not env_file.is_file():
         return
@@ -15,7 +15,6 @@ def load_env(env_file: Path | None = None) -> None:
             continue
 
         key, value = line.split("=", 1)
-
         key = key.strip()
         value = value.strip().strip('"').strip("'")
 
