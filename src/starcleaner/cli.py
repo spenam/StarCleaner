@@ -13,6 +13,9 @@ from . import __version__
 from .core import CACHE_FILE, build_scan, load_scan, save_scan
 from .github import GitHubAPIError, GitHubClient
 from .report import render_markdown, render_text
+from .config import load_env
+
+load_env()
 
 
 def _token(cli_token: str | None) -> str | None:
