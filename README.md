@@ -134,7 +134,6 @@ python -m unittest discover -s tests -v
 - [x] Interactive, confirmation-based cleanup
 - [ ] Better terminal formatting and progress indicator
 - [ ] Optional SQLite history and before/after statistics
-- [ ] Optional Ollama-powered repository summaries
 
 ## License
 
